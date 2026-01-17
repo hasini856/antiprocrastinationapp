@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.antiprocrastination">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Anti Procrastination App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- MAIN ACTIVITY (LAUNCH SCREEN) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">        <!-- REQUIRED -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- TASK SELECTION SCREEN -->
+        <activity
+            android:name=".TaskActivity"
+            android:exported="false" />
+
+        <!-- TIMER SCREEN -->
+        <activity
+            android:name=".TimerActivity"
+            android:exported="false" />
+
+        <!-- PROFILE / ABOUT ME SCREEN -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <!-- FEEDBACK SCREEN -->
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+
+        <!-- COMPLETION SCREEN -->
+        <activity
+            android:name=".CompletionActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
